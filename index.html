@@ -1,0 +1,51 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Персональный планировщик задач</title>
+</head>
+
+<body>
+
+<header>
+
+</header>
+
+<div id="newTaskBlock">
+    <input type="text" id="newTaskName"/>
+    <select id="newStatus">
+        <option value="Запланировано">Запланировано</option>
+        <option value="Выполнено">Выполнено</option>
+        <option value="Неплохо">Неплохо бы</option>
+    </select>
+    <button id="newTaskButton" value="Создать">Создать</button>
+</div>
+
+<br>
+
+<div id="mainTable">
+    <table id="tasksTable" class="tasks_table" border="1">
+        <tr>
+            <th width=3%>#</th>
+            <th width=80%>Задачи</th>
+            <th width=10%>Статус</th>
+            <th width=10%>Действие</th>
+        </tr>
+    </table>
+</div>
+
+
+<!--<br>-->
+<!--<br>-->
+<!--<div id="testblock">-->
+<!--<input type="button" id="test-btn" value="test">-->
+<!--</div>-->
+
+<footer>
+    <p>
+        <small>Under GPLv3.</small>
+    </p>
+</footer>
+
+</body>
+<script src="./src/js/index.js"></script>
+</html>
+
