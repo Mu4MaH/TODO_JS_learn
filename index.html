@@ -2,6 +2,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="src/css/style.css" rel="stylesheet">
     <title>Персональный планировщик задач</title>
 </head>
 
@@ -13,37 +14,34 @@
 
 <div id="newTaskBlock">
     <input type="text" id="newTaskName"/>
-    <select id="newStatus">
-        <option value="Запланировано">Запланировано</option>
-        <option value="Выполнено">Выполнено</option>
-        <option value="Неплохо">Неплохо бы</option>
-    </select>
+
+    <ul id="newStatus" title="Статус">
+        <li id="newDoneOpt">Сделано</a></li>
+        <li id="newNotDoneOpt">Не сделано</a></li>
+        <li id="newWishOpt">Хорошо бы</li>
+    </ul>
+
     <button id="newTaskButton" value="Создать">Создать</button>
+    <button id="clearBtn">Очистить список</button>
 </div>
 
 <br>
 
 <div id="mainTable">
     <table id="tasksTable" class="tasks_table" border="1">
-        <tr>
+        <tr class="ttable_h">
             <th width=3%>#</th>
             <th width=80%>Задачи</th>
             <th width=10%>Статус</th>
-            <th width=10%>Действие</th>
+            <th width=10%>Новый статус</th>
         </tr>
     </table>
 </div>
 
 
-<!--<br>-->
-<!--<br>-->
-<!--<div id="testblock">-->
-<!--<input type="button" id="test-btn" value="test">-->
-<!--</div>-->
-
 <footer>
     <p>
-        <small>Under GPLv3.</small>
+        <small>Under WTFPL</small>
     </p>
 </footer>
 
